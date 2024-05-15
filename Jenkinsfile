@@ -16,7 +16,7 @@ pipeline {
             when{
                 allOf{
                     branch 'master'
-                    equals expected: true, actual: params.DEPLOY_TO
+                    expression{ params.DEPLOY_TO }
                 }
             }
             steps {
