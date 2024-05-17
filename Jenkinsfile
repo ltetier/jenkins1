@@ -1,11 +1,14 @@
 pipeline {
     agent any
 
+    tools{
+        gradle 'gradle8.6'
+    }
+
     stages{
         stage('build'){
             steps{
-                sh 'echo hello > world.txt'
-                archiveArtifacts(artifacts: '*.txt')
+                sh 'gradle -v'
             }
         }
     }
