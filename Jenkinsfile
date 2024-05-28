@@ -8,12 +8,12 @@ pipeline {
                
             }
         }
+    }
 
-        post(
+    post(
             success(
-                emailext (to:laurent.tetier@gmail.com,  body: 'test body', subject: 'test subject')
+                emailext (to:'laurent.tetier@gmail.com',  body: 'test body', subject: 'test subject')
             )
         )
-    }
 
 }
