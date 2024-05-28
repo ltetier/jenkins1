@@ -10,10 +10,10 @@ pipeline {
         }
     }
 
-    post(
-            success(
-                emailext (to:'laurent.tetier@gmail.com',  body: 'test body', subject: 'test subject')
-            )
-        )
+    post{
+        success{
+                emailext(to:'laurent.tetier@gmail.com',  body: 'test body', subject: 'test subject')
+        }
+    }
 
 }
