@@ -12,7 +12,7 @@ pipeline {
 
     post{
         success{
-                emailext(to:'laurent.tetier@gmail.com',  body: 'test body', subject: 'test subject')
+                emailext(to:'laurenttetier@orange.fr',  body: 'test body', subject: 'test subject')
         }
     }
 
