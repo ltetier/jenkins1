@@ -10,10 +10,4 @@ pipeline {
         }
     }
 
-    post{
-        success{
-                emailext(to:'laurenttetier@orange.fr',  body: 'test body', subject: 'test subject')
-        }
-    }
-
 }
