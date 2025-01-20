@@ -18,7 +18,7 @@ pipeline {
 
             }
             steps{
-                echo 'Déploiement de la version ${VERSION} en production'
+                echo "Déploiement de la version ${VERSION} en production"
             }
         }
         stage('Deploy'){
